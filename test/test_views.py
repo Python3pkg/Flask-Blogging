@@ -401,8 +401,8 @@ class TestViewsWithUnicode(TestViews):
             tags = ["unicode hello"] if i < 10 else ["unicode world"]
             user = "testuser" if i < 10 else "newuser"
             self.storage.save_post(
-                title=u'{0}_{1}'.format(get_random_unicode(15), i),
-                text=u'{0}_{1}'.format(get_random_unicode(200), i),
+                title='{0}_{1}'.format(get_random_unicode(15), i),
+                text='{0}_{1}'.format(get_random_unicode(200), i),
                 user_id=user, tags=tags)
 
     def test_editor_edit_page(self):

@@ -6,7 +6,7 @@ import random
 def get_random_unicode(length):
 
     try:
-        get_char = unichr
+        get_char = chr
     except NameError:
         get_char = chr
 

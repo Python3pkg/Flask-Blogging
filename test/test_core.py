@@ -17,13 +17,13 @@ sample_markdown = """
     print("Hello, World")
 """
 
-expected_markup = u'<h2>This is a test</h2>\n' \
-                  u'<div class="codehilite"><pre>' \
-                  u'<span class="k">print</span>' \
-                  u'<span class="p">(</span><span class="s">' \
-                  u'&quot;Hello, World&quot;</span><span class="p">)' \
-                  u'</span>\n' \
-                  u'</pre></div>'
+expected_markup = '<h2>This is a test</h2>\n' \
+                  '<div class="codehilite"><pre>' \
+                  '<span class="k">print</span>' \
+                  '<span class="p">(</span><span class="s">' \
+                  '&quot;Hello, World&quot;</span><span class="p">)' \
+                  '</span>\n' \
+                  '</pre></div>'
 
 
 class TestCore(TestCase):
